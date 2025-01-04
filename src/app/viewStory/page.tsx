@@ -72,7 +72,7 @@ export default function ViewStory() {
                 setPaused={setPaused}
                 paused={paused}
               >
-                <div className="min-h-12 py-8 px-4">
+                <div className="min-h-12 py-8 px-4" key={storyIndex}>
                   {renderProgressBars(allStories)}
                 </div>
               </StoryCard>
